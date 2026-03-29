@@ -1,4 +1,4 @@
--- WedSnap migration
+-- WeddVue migration
 -- Goal:
 -- 1. Move from single-event admin flow to account-owned multi-event dashboard
 -- 2. Keep frictionless guest uploads through anonymous Supabase sessions

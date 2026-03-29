@@ -66,7 +66,7 @@ export function TableQrCard({
   const fileLabel =
     (table.guest_group_name ? sanitizeFileName(table.guest_group_name) : '') ||
     `mesa-${table.table_number}`
-  const qrFileName = `wedsnap-${fileLabel}-qr.png`
+  const qrFileName = `weddvue-${fileLabel}-qr.png`
 
   useEffect(() => {
     return () => {

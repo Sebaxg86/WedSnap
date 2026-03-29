@@ -44,7 +44,7 @@ export function AuthForm({
         </h1>
         <p className="page-lead auth-card__lead">
           {isSignUp
-            ? 'Abre tu espacio WedSnap, crea eventos y genera QRs por mesa para recibir fotos privadas.'
+            ? 'Abre tu espacio WeddVue, crea eventos y genera QRs por mesa para recibir fotos privadas.'
             : 'Inicia sesion para volver a tu dashboard, administrar tus eventos y compartir los QRs de cada mesa.'}
         </p>
       </div>

@@ -1,4 +1,4 @@
--- WedSnap seed template
+-- WeddVue seed template
 -- Replace the placeholder values before running.
 -- This template is optional now that owners can create events from the dashboard.
 

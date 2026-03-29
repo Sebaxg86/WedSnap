@@ -4,7 +4,7 @@ import { UAParser } from 'ua-parser-js'
 import type { DeviceContext } from '@/lib/device/getDeviceContext'
 import { supabase } from '@/lib/supabase/client'
 
-const GUEST_SESSION_STORAGE_KEY = 'wedsnap_guest_session_id'
+const GUEST_SESSION_STORAGE_KEY = 'weddvue_guest_session_id'
 const STORAGE_BUCKET = 'fotos-boda'
 
 type UploadBatchStatus = 'completed' | 'failed'

@@ -1,6 +1,6 @@
 # App Pipeline
 
-This document explains the runtime flow of the current WedSnap app.
+This document explains the runtime flow of the current WeddVue app.
 
 ## 1. Browser Entry Pipeline
 

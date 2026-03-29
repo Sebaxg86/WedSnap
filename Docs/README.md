@@ -1,6 +1,6 @@
 # Docs
 
-Technical documentation for the WedSnap repository.
+Technical documentation for the WeddVue repository.
 
 ## Available Guides
 

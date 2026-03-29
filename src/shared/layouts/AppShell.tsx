@@ -33,7 +33,7 @@ export function AppShell() {
       <header className="site-header">
         <div>
           <Link className="site-brand-link" to="/">
-            <p className="site-brand">WedSnap</p>
+            <p className="site-brand">WeddVue</p>
           </Link>
           <p className="site-caption">{caption}</p>
         </div>

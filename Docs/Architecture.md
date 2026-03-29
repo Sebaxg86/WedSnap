@@ -1,10 +1,10 @@
 # Architecture Overview
 
-This document describes the current WedSnap product architecture.
+This document describes the current WeddVue product architecture.
 
 ## Product Goal
 
-WedSnap now behaves like a reusable wedding product:
+WeddVue now behaves like a reusable wedding product:
 
 - anyone can discover the public landing page
 - the couple creates an account and enters a private dashboard

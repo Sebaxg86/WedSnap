@@ -1,6 +1,6 @@
 # Database Docs
 
-Database-related SQL files for WedSnap live in this folder.
+Database-related SQL files for WeddVue live in this folder.
 
 ## Files
 

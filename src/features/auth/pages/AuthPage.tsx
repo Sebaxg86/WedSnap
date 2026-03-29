@@ -114,7 +114,7 @@ export function AuthPage() {
   return (
     <section className="page-grid auth-page">
       <div className="page-copy auth-page__copy">
-        <p className="eyebrow">WedSnap para cualquier boda</p>
+        <p className="eyebrow">WeddVue para cualquier boda</p>
         <h1 className="page-title auth-page__title">
           De la landing al dashboard, sin rutas raras ni pasos escondidos.
         </h1>

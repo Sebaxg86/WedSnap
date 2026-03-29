@@ -1,4 +1,4 @@
-# WedSnap 🚀
+# WeddVue 🚀
 
 A private QR-powered wedding photo collection platform for capturing the event from every guest's perspective.
 
