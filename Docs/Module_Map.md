@@ -25,6 +25,7 @@ Use this document to answer the practical question:
 - Change the main upload page: [GuestUploadPage.tsx](../src/features/guest-upload/pages/GuestUploadPage.tsx)
 - Change the file-picker block: [UploadDropzone.tsx](../src/features/guest-upload/components/UploadDropzone.tsx)
 - Change the selected-files list: [PhotoSelectionSummary.tsx](../src/features/guest-upload/components/PhotoSelectionSummary.tsx)
+- Change the real Supabase upload orchestration, anonymous session handling, and RPC calls: [guestUploadService.ts](../src/features/guest-upload/lib/guestUploadService.ts)
 
 ### Upload rules and validation
 
@@ -44,8 +45,18 @@ Use this document to answer the practical question:
 
 ### Admin area
 
-- Change the admin page scaffold: [AdminDashboardPage.tsx](../src/features/admin/pages/AdminDashboardPage.tsx)
-- Later, if admin auth is added, start there and then move into shared auth utilities if they are introduced
+- Change the admin page orchestration, session bootstrap, table filtering, or Supabase reads/writes: [AdminDashboardPage.tsx](../src/features/admin/pages/AdminDashboardPage.tsx)
+- Change the admin sign-in form: [AdminLoginForm.tsx](../src/features/admin/components/AdminLoginForm.tsx)
+- Change the event summary card and table-count creation flow: [EventSetupPanel.tsx](../src/features/admin/components/EventSetupPanel.tsx)
+- Change each table card, QR actions, or mobile QR controls: [TableQrCard.tsx](../src/features/admin/components/TableQrCard.tsx)
+- Change admin-side types: [adminTypes.ts](../src/features/admin/lib/adminTypes.ts)
+- Change how frontend QR tokens are generated before saving: [generateQrToken.ts](../src/features/admin/lib/generateQrToken.ts)
+
+### Table setup and QR generation
+
+- Change how tables are represented in the database: [Migration_Script.sql](Db/Migration_Script.sql)
+- Change how initial table rows are generated: [Supabase_seed_template.sql](Db/Supabase_seed_template.sql)
+- Change the admin UX for configuring tables and generating QRs: [AdminDashboardPage.tsx](../src/features/admin/pages/AdminDashboardPage.tsx)
 
 ### Global look and feel
 

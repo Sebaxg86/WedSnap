@@ -1,8 +1,8 @@
 import { NavLink, Outlet } from 'react-router-dom'
 
 const navigationItems = [
-  { label: 'Guest Upload', to: '/upload' },
-  { label: 'Admin', to: '/admin' },
+  { label: 'Subir fotos', to: '/upload' },
+  { label: 'Administracion', to: '/admin' },
 ]
 
 export function AppShell() {
@@ -14,11 +14,11 @@ export function AppShell() {
         <div>
           <p className="site-brand">WedSnap</p>
           <p className="site-caption">
-            Private wedding uploads powered by QR entry
+            Recuerdos privados de la boda a traves de QR
           </p>
         </div>
 
-        <nav className="site-nav" aria-label="Primary">
+        <nav className="site-nav" aria-label="Principal">
           {navigationItems.map((item) => (
             <NavLink
               className={({ isActive }) =>

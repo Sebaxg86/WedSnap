@@ -47,21 +47,10 @@ CREATE TABLE public.qr_codes (
   scan_count integer NOT NULL DEFAULT 0 CHECK (scan_count >= 0),
   last_scanned_at timestamp with time zone,
   created_at timestamp with time zone NOT NULL DEFAULT timezone('utc'::text, now()),
+  table_number integer NOT NULL CHECK (table_number > 0),
+  guest_group_name text,
   CONSTRAINT qr_codes_pkey PRIMARY KEY (id),
   CONSTRAINT qr_codes_event_id_fkey FOREIGN KEY (event_id) REFERENCES public.events(id)
-);
-CREATE TABLE public.registros_fotos (
-  id uuid NOT NULL DEFAULT gen_random_uuid(),
-  created_at timestamp with time zone NOT NULL DEFAULT timezone('utc'::text, now()),
-  guest_name text,
-  file_url text NOT NULL,
-  status text DEFAULT 'pendiente'::text,
-  is_favorite boolean DEFAULT false,
-  device_info text,
-  browser_info text,
-  file_size_kb integer,
-  user_agent_raw text,
-  CONSTRAINT registros_fotos_pkey PRIMARY KEY (id)
 );
 CREATE TABLE public.upload_batches (
   id uuid NOT NULL DEFAULT gen_random_uuid(),

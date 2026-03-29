@@ -12,9 +12,9 @@ export function PhotoSelectionSummary({
   if (files.length === 0) {
     return (
       <div className="empty-state">
-        <p className="empty-state-title">No photos selected yet.</p>
+        <p className="empty-state-title">Aun no has seleccionado fotos.</p>
         <p className="empty-state-copy">
-          Guests will be able to upload up to 10 photos per batch.
+          Puedes subir hasta 10 fotos por lote.
         </p>
       </div>
     )
@@ -26,9 +26,9 @@ export function PhotoSelectionSummary({
     <div className="selection-summary">
       <div className="selection-summary__header">
         <div>
-          <h3 className="panel-title">Selected photos</h3>
+          <h3 className="panel-title">Fotos seleccionadas</h3>
           <p className="panel-subtitle">
-            {files.length} file{files.length === 1 ? '' : 's'} ·{' '}
+            {files.length} {files.length === 1 ? 'archivo' : 'archivos'} -{' '}
             {formatFileSize(totalSize)}
           </p>
         </div>
@@ -46,7 +46,7 @@ export function PhotoSelectionSummary({
               onClick={() => onRemoveFile(index)}
               type="button"
             >
-              Remove
+              Quitar
             </button>
           </li>
         ))}

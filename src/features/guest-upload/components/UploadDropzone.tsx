@@ -14,16 +14,16 @@ export function UploadDropzone({
   return (
     <div className="dropzone">
       <div>
-        <p className="dropzone__eyebrow">Guest upload</p>
-        <h2 className="panel-title">Choose wedding photos</h2>
+        <p className="dropzone__eyebrow">Fotos de invitados</p>
+        <h2 className="panel-title">Elige las fotos de la boda</h2>
         <p className="panel-subtitle">
-          Add JPG, PNG, or HEIC images. The production flow will compress and
-          upload them to the private bucket.
+          Puedes agregar fotos JPG, PNG o HEIC. Antes de subirlas, el sitio las
+          optimiza para que el proceso sea mas ligero.
         </p>
       </div>
 
       <label className="button button--secondary" htmlFor={inputId}>
-        Select photos
+        Seleccionar fotos
       </label>
 
       <input
@@ -40,7 +40,7 @@ export function UploadDropzone({
       />
 
       <p className="helper-copy">
-        Remaining slots in this batch: {remainingSlots}
+        Espacios disponibles en este lote: {remainingSlots}
       </p>
     </div>
   )
